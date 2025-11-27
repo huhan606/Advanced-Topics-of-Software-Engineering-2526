@@ -37,7 +37,9 @@ class Calculator:
 
     def square_root(self, a):
         if a < 0:
-            raise ValueError("Cannot take the square root of a negative number.")
+            raise ValueError(
+                "Cannot take the square root of a negative number."
+            )
         result = math.sqrt(a)
         self._push_stack(result)
         return result
